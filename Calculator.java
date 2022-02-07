@@ -23,9 +23,13 @@ public class Calculator {
         }else if(operator == 3){
             System.out.println("Result: "+ (num1 * num2));
         }else if(operator == 4){
-            System.out.println("Result: "+ (num1 / num2));
+            if(num2 == 0){
+                System.out.println("Result: Undefined");
+            }else
+                System.out.println("Result: "+ (num1 / num2));
         }else{
             System.out.println("Not a valid operator");
         }
     }
 }
+
