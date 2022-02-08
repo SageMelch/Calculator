@@ -19,7 +19,7 @@ public class Calculator {
             System.out.println("3 - Multiplication");
             System.out.println("4 - Division");
             System.out.println("5 - Exponentiation (Second digit will round down to nearest integer)");
-            System.out.println("6 - Factorial");
+            System.out.println("6 - Factorial (Does not work with decimals");
             int operator = scanner.nextInt();
             // Does not need second input
             if (operator == 6) { // Factorial
