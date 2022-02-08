@@ -8,7 +8,6 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter First Digit: ");
         double num1 = scanner.nextDouble();
-
         //Operators
         System.out.println("Enter Operation: ");
         System.out.println("1 - Addition");
@@ -18,8 +17,8 @@ public class Calculator {
         System.out.println("5 - Exponentiation (Second digit will round down to nearest integer)");
         System.out.println("6 - Factorial");
         int operator = scanner.nextInt();
-        //Doesn't need second input
-        if(operator == 6){
+        // Does not need second input
+        if(operator == 6){ // Factorial
             if(num1 == 0){
                 System.out.println("Result: 1");
             }else{
@@ -30,6 +29,7 @@ public class Calculator {
                 System.out.println("Result: "+num1);
             }
         }else{
+            // Needs second input
             System.out.print("Enter Second Digit: ");
             double num2 = scanner.nextDouble();
             //Variables
@@ -37,18 +37,18 @@ public class Calculator {
             int exponent = (int)power;//Argument in for loop
             double num4 = num1;     //Keeps num1 the same
             //Calculations
-            if(operator == 1) {
+            if(operator == 1) { // Addition
                 System.out.println("Result: "+ (num1 + num2));
-            }else if(operator == 2){
+            }else if(operator == 2){ // Subtraction
                 System.out.println("Result: "+ (num1 - num2));
-            }else if(operator == 3){
+            }else if(operator == 3){ // Multiplication
                 System.out.println("Result: "+ (num1 * num2));
-            }else if(operator == 4) {
+            }else if(operator == 4) { // Division
                 if (num2 == 0) {
                     System.out.println("Result: Undefined");
                 } else
                     System.out.println("Result: " + (num1 / num2));
-            }else if(operator == 5) {
+            }else if(operator == 5) { // Exponentiation
                 if (num2 == 0) {
                     System.out.println("Result: 1");
                 } else {
